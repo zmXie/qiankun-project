@@ -1,0 +1,37 @@
+// element 样式补丁
+.el-card {
+  &.is-always-shadow {
+    box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6), 0 2px 4px 0 rgba(232, 237, 250, 0.5);
+  }
+  &.is-hover-shadow {
+    &:hover {
+      box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6), 0 2px 4px 0 rgba(232, 237, 250, 0.5);
+    }
+  }
+}
+
+.el-menu--horizontal {
+  border-bottom: none !important;
+}
+
+.el-tabs__item:focus.is-active.is-focus:not(:active) {
+  box-shadow: none !important;
+}
+.el-dropdown-menu.el-popper {
+  overflow: auto;
+  max-height: 60vh;
+  @include global-scrollbar;
+}
+.avue-form {
+  .el-date-editor .el-range-separator {
+    max-width: 2em;
+    width: auto;
+  }
+}
+
+.el-link {
+  &.mini-link {
+    font-size: 12px;
+    display: inline;
+  }
+}

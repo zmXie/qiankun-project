@@ -1,0 +1,23 @@
+// 补丁 base
+@import './fixed/base.scss';
+// 补丁 element
+@import './fixed/element.scss';
+// 统一浏览器样式
+@import './fixed/normalize.scss';
+// 进度条
+@import './fixed/n-progress.scss';
+// flex
+@import './flex.scss';
+// 菜单栏
+@import './sidebar.scss';
+// 动画
+@import './transition.scss';
+
+// 显示一行，超出...
+.line1 {
+  @include multiline(1);
+}
+// 显示2行，超出...
+.line2 {
+  @include multiline(2);
+}
